@@ -10,6 +10,16 @@
    </bean>
    
    <bean id="exampleBean" 
-         class="examples.ExampleBean" init-method="init" destroy-method="dest"/>
+         class="com.tutorialspoint.ExampleBean" init-method="init" destroy-method="dest"/>
+         
+   <bean id="helloWorldAgain" class="com.tutorialspoint.event.HelloWorldAgain">
+       <property name="message" value="Hello World!"/>
+   </bean>
+
+   <bean id="cStartEventHandler" 
+         class="com.tutorialspoint.event.CStartEventHandler"/>
+
+   <bean id="cStopEventHandler" 
+         class="com.tutorialspoint.event.CStopEventHandler"/> 
 
 </beans>
